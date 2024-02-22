@@ -13,8 +13,7 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-    <title>Homepage | Overview the projects and the pictures of them</title>
-
+    <title>About | Overview the projects and the pictures of them</title>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -22,6 +21,11 @@
       href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -47,40 +51,25 @@
         >
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html"
-                >Home</a
-              >
+              <a class="nav-link" href="index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="about.html">About</a>
+              <a class="nav-link active" aria-current="page" href="about.html"
+                >About</a
+              >
             </li>
             <li class="nav-item">
               <a class="nav-link" href="work.html">Work</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link" href="contact.html">Contact</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
-    <img src="images/logo.png" alt="my-logo" class="logo" />
-    <h2 class="welcome-text">Hello, my name is</h2>
-    <h1 class="name-homepage">Elvira Graf</h1>
-    <h2 class="welcome-text">Frontend Developer, based in Swiss.</h2>
-    <button class="btn btn-primary homepage-get-startet-btn">
-      <a href="#container" class="link-button">Get started</a>
-    </button>
-
-    <div class="container" id="container">
-      <div class="row d-flex justify-content-evenly p-5 homepage-container">
-        <div class="col-md-6 d-flex justify-content-center">
-          <img
-            src="images/portfolio-photo.jpeg"
-            alt="portfolio-photo"
-            class="img-fluid rounded"
-          />
-        </div>
+    <div class="container">
+      <div class="row d-flex justify-content-evenly p-5 mt-5">
         <div class="col-md-6">
           <h1 class="name-about">
             Hi I am Elvira <br />
@@ -100,8 +89,6 @@
             <a href="work.html" class="link-button">View all projects</a>
           </button>
         </div>
-      </div>
-      <div class="row d-flex justify-content-evenly p-5 mt-5">
         <div class="col-md-6 d-flex justify-content-center">
           <img
             src="images/portfolio-photo.jpeg"
@@ -109,59 +96,19 @@
             class="img-fluid rounded"
           />
         </div>
-        <div class="col-md-6">
-          <h1 class="name-about">
-            Hi I am Elvira <br />
-            Angelina Graf
-          </h1>
-          <br />
-          <h3>Frontend Developer. based in Swiss.</h3>
-          <br />
-          <p>
-            Placeholder: "Lorem ipsum dolor sit amet consectetur adipisicing
-            elit. Perferendis quia, dignissimos nam ratione veniam quibusdam
-            porro omnis quam vel eos eveniet alias temporibus deserunt veritatis
-            minima fugiat explicabo eum dolore."
-          </p>
-          <br />
-          <button type="button" class="btn btn-primary btn-lg">
-            <a href="work.html" class="link-button">View all projects</a>
-          </button>
-        </div>
       </div>
-      <div class="row d-flex justify-content-evenly p-5 mt-5">
-        <div class="col-md-6 d-flex justify-content-center">
-          <img
-            src="images/portfolio-photo.jpeg"
-            alt="portfolio-photo"
-            class="img-fluid rounded"
-          />
-        </div>
-        <div class="col-md-6">
-          <h1 class="name-about">
-            Hi I am Elvira <br />
-            Angelina Graf
-          </h1>
-          <br />
-          <h3>Frontend Developer. based in Swiss.</h3>
-          <br />
-          <p>
-            Placeholder: "Lorem ipsum dolor sit amet consectetur adipisicing
-            elit. Perferendis quia, dignissimos nam ratione veniam quibusdam
-            porro omnis quam vel eos eveniet alias temporibus deserunt veritatis
-            minima fugiat explicabo eum dolore."
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Work Inquiry</h5>
+          <p class="card-text">
+            With supporting text below as a natural lead-in to additional
+            content.
           </p>
-          <br />
-          <button type="button" class="btn btn-primary btn-lg">
-            <a href="work.html" class="link-button">View all projects</a>
+          <button class="btn btn-primary">
+            <a href="#" class="link-button">Go somewhere</a>
           </button>
         </div>
       </div>
     </div>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
   </body>
 </html>

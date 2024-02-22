@@ -1,0 +1,95 @@
+body {
+  background: #fcf9f4;
+}
+.navbar {
+  background-color: #eee5d8 !important;
+}
+
+.nav-item {
+  margin: auto 20px;
+}
+.nav-link {
+  transition: transform 0.3s ease-in;
+  text-decoration: none;
+  color: black;
+}
+.nav-link:hover {
+  transform: scale(1.3);
+  color: #4f7942;
+}
+
+.mini-logo {
+  width: 45px;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  margin: 150px auto 50px auto;
+  width: 230px;
+  transition: transform 0.5s ease-in;
+}
+
+.logo:hover {
+  transform: scale(2);
+}
+
+.name-homepage {
+  text-align: center;
+  font-size: 90px;
+  font-family: "Poppins", sans-serif;
+  text-shadow: 0 0 5px #fff, 0 0 7px #fff, 0 0 8px #fff, 0 0 10px #8ca584,
+    0 0 15px #4f7942, 0 0 10px #74926a, 0 0 15px #6b8b61, 0 0 30px #6c8864;
+}
+
+.welcome-text {
+  text-align: center;
+  padding: 25px;
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+}
+.homepage-get-startet-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+}
+
+.homepage-container {
+  margin-top: 350px;
+}
+
+@media only screen and (max-width: 578px) {
+  .homepage-container {
+    margin-top: 0;
+  }
+}
+
+/*about-page*/
+
+.img-fluid {
+  width: 400px;
+}
+
+.btn-primary {
+  background-color: #4f7942;
+  padding: 20px;
+  font-size: 20px;
+  border-color: #4f7942;
+}
+
+.btn-primary:hover {
+  background-color: #fcf9f4;
+  color: #4f7942;
+  border-color: #4f7942;
+}
+
+.link-button {
+  text-decoration: none;
+  color: #fcf9f4;
+}
+
+.link-button:hover {
+  color: #4f7942;
+}
