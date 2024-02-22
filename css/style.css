@@ -1,5 +1,13 @@
-body {
-  background: #fcf9f4;
+:root {
+  --primary-color: #fcf9f4;
+  --secondary-color: #4f7942;
+}
+
+header {
+  background: var(--primary-color);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  min-height: 100vh;
 }
 .navbar {
   background-color: #eee5d8 !important;
@@ -15,7 +23,7 @@ body {
 }
 .nav-link:hover {
   transform: scale(1.3);
-  color: #4f7942;
+  color: var(--secondary-color);
 }
 
 .mini-logo {
@@ -61,9 +69,13 @@ body {
 }
 
 @media only screen and (max-width: 578px) {
-  .homepage-container {
-    margin-top: 0;
-  }
+}
+
+i {
+  color: #4f7942;
+  text-align: center;
+  font-size: 30px;
+  margin: auto;
 }
 
 /*about-page*/
