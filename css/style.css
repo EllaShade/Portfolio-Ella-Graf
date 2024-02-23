@@ -12,7 +12,6 @@ header {
 .navbar {
   background-color: #eee5d8 !important;
   opacity: 0.8;
-  position: fixed;
   width: 100%;
   top: 0;
   z-index: 1000;
@@ -20,6 +19,7 @@ header {
 
 .nav-item {
   margin: auto 20px;
+  list-style: none;
 }
 .nav-link {
   transition: transform 0.3s ease-in;
