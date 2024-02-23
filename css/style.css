@@ -234,3 +234,15 @@ li {
     font-size: 14px !important;
   }
 }
+
+/* work */
+
+#carouselExampleIndicators {
+  background: var(--primary-color);
+  border: 2px solid rgba(79, 121, 66, 0.5);
+  border-radius: 6px;
+}
+
+.carousel-control-next-icon {
+  color: var(--secondary-color);
+}
