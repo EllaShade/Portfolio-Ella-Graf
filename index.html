@@ -8,6 +8,7 @@
       content="Portfolio of Ella Graf | Navigating the intersection of technology and design"
     />
     <script src="js/index.js"></script>
+    <script src="js/translation.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
@@ -38,7 +39,18 @@
       <div class="container-fluid">
         <a class="navbar-brand" href="#"
           ><img src="images/logo.png" alt="my-logo" class="mini-logo" /> Elvira
-          Graf</a
+          Graf
+          <span class="switch">
+            <input
+              id="language-toggle"
+              class="check-toggle check-toggle-round-flat"
+              type="checkbox"
+              onclick="toggleLanguage()"
+            />
+            <label for="language-toggle"></label>
+            <span class="on" data-lang="DE">DE</span>
+            <span class="off" data-lang="EN">EN</span>
+          </span></a
         >
         <button
           class="navbar-toggler"
@@ -68,7 +80,7 @@
               <a class="nav-link" href="work.html">Work</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link" href="contact.html">Contact</a>
             </li>
           </ul>
         </div>
