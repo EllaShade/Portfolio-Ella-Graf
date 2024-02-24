@@ -171,9 +171,9 @@ h3 {
   font-family: "Poppins", sans-serif;
   font-size: 24px;
 }
-.homepage-get-startet-btn {
+.homepage-get-started-btn {
   display: flex;
-  justify-content: center;
+  justify-content: center !important;
   align-items: center;
   text-align: center;
   margin: auto;
@@ -395,6 +395,25 @@ li {
 
 .work-footer {
   margin-bottom: 40px;
+}
+
+/* contact*/
+
+.contact-container {
+  margin: 150px auto 60px auto;
+}
+
+.contact-me-text {
+  margin-bottom: 60px;
+}
+
+.input-contact {
+  margin: auto 50px;
+}
+#formResponse {
+  margin: 30px auto 150px 50px !important;
+  font-size: 22px;
+  font-family: "Poppins", sans-serif;
 }
 
 @media only screen and (max-width: 800px) {

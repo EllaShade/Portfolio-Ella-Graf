@@ -57,4 +57,28 @@ const translations = {
     EN: "Harmony Unleashed: A Musical Journey through the Piano's Past and Present",
     DE: "Harmony Unleashed: Eine musikalische Reise durch die Vergangenheit und Gegenwart des Klaviers",
   },
+
+  "Hi I am Elvira Angelina Graf": {
+    EN: "Hi I am Elvira Angelina Graf",
+    DE: "Hallo, ich bin Elvira Angelina Graf",
+  },
+  "Frontend Developer, based in Swiss.": {
+    EN: "Frontend Developer, based in Switzerland.",
+    DE: "Frontend Entwicklerin aus der Schweiz.",
+  },
+  "As a passionate Frontend Developer, I weave digital magic through code, crafting seamless and visually captivating user experiences. With a keen eye for design and a love for elegant solutions, I embark on a journey to bring ideas to life in the ever-evolving web landscape. Each line of code is an expression of my dedication to transforming concepts into interactive, user-friendly interfaces that not only meet but exceed expectations. As I navigate the intricate dance between creativity and functionality, I am driven by the belief that exceptional web design goes beyond aesthetics - it's about creating a symphony of elements that resonate with users and elevate their online interactions to a delightful crescendo.":
+    {
+      EN: "As a passionate Frontend Developer, I weave digital magic through code, crafting seamless and visually captivating user experiences. With a keen eye for design and a love for elegant solutions, I embark on a journey to bring ideas to life in the ever-evolving web landscape. Each line of code is an expression of my dedication to transforming concepts into interactive, user-friendly interfaces that not only meet but exceed expectations. As I navigate the intricate dance between creativity and functionality, I am driven by the belief that exceptional web design goes beyond aesthetics - it's about creating a symphony of elements that resonate with users and elevate their online interactions to a delightful crescendo.",
+      DE: "Als leidenschaftliche Frontend-Entwicklerin zaubere ich digitale Magie durch Code und kreiere nahtlose und visuell fesselnde Benutzererlebnisse. Mit einem geschulten Auge für Design und einer Liebe zu eleganten Lösungen begebe ich mich auf eine Reise, um Ideen im sich ständig weiterentwickelnden Web-Landschaft zum Leben zu erwecken. Jede Codezeile ist Ausdruck meiner Hingabe, Konzepte in interaktive, benutzerfreundliche Oberflächen zu verwandeln, die nicht nur den Erwartungen entsprechen, sondern sie übertreffen. Auf meiner Reise durch das komplexe Zusammenspiel von Kreativität und Funktionalität treibt mich die Überzeugung an, dass herausragendes Webdesign über Ästhetik hinausgeht - es geht darum, eine Symphonie von Elementen zu schaffen, die mit den Benutzern in Resonanz stehen und ihre Online-Interaktionen zu einem bezaubernden Höhepunkt führen.",
+    },
+
+  "My Projects": {
+    EN: "My Projects",
+    DE: "Meine Projekte",
+  },
+  "Placeholder: Embark on a journey through time on our website, where you can effortlessly compare and choose time zones globally, simplifying your cross-border planning. With user-friendly features and an intuitive interface, managing international schedules has never been more convenient.":
+    {
+      EN: "Placeholder: Embark on a journey through time on our website, where you can effortlessly compare and choose time zones globally, simplifying your cross-border planning. With user-friendly features and an intuitive interface, managing international schedules has never been more convenient.",
+      DE: "Platzhalter: Machen Sie eine Zeitreise auf unserer Website, auf der Sie mühelos Zeitzonen weltweit vergleichen und auswählen können, um Ihre grenzüberschreitende Planung zu vereinfachen. Mit benutzerfreundlichen Funktionen und einer intuitiven Benutzeroberfläche war die Verwaltung internationaler Zeitpläne noch nie so bequem.",
+    },
 };

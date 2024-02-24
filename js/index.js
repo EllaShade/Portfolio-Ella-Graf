@@ -38,6 +38,25 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   let switchElement = document.getElementById("language-toggle");
+  switchElement.addEventListener("click", toggleLanguage);
+});
 
-  switchElement.addEventListener("change", toggleLanguage);
+$(document).ready(function () {
+  $("#sendButton").click(function () {
+    let name = $("#nameInput").val();
+    let email = $("#emailInput").val();
+    let message = $("#messageInput").val();
+
+    $.ajax({
+      type: "POST",
+      url: "php/send_email.php",
+      data: { name: name, email: email, message: message },
+      success: function (response) {
+        $("#formResponse").html(response);
+      },
+      error: function () {
+        $("#formResponse").html("Error sending message.");
+      },
+    });
+  });
 });
