@@ -368,6 +368,21 @@ li {
   font-size: 18px;
   margin: 15px 40px 40px 40px;
 }
+.link-to-project {
+  margin: 15px 40px 65px 40px;
+}
+.link-to-project a {
+  color: #1f0404;
+
+  font-size: 20px;
+  text-decoration: underline 1px #4f7942;
+  text-shadow: 0 5px 15px rgba(79, 121, 66, 0.5);
+  animation: colorChange 5s infinite;
+}
+
+.link-to-project a:hover {
+  color: #4f7942;
+}
 
 .card {
   margin: 60px 40px;
