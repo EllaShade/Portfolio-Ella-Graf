@@ -15,14 +15,14 @@ if(isset($_POST['name']) && isset($_POST['email']) && isset($_POST['message'])) 
 
     $mail = new PHPMailer(true);
     $mail->Debugoutput = 'html';
-    $mail->SMTPDebug = 3;
+    $mail->SMTPDebug = 2;
     $mail->isSMTP();
     $mail->Host = 'smtp.gmail.com';
     $mail->SMTPAuth = true;
     $mail->Username = 'elvira.a.graf@gmail.com'; 
     $mail->Password = 'Michael08331*'; 
-    $mail->SMTPSecure = 'ssl'; 
-    $mail->Port = 465; 
+    $mail->SMTPSecure = 'tls'; 
+    $mail->Port = 587; 
 
     try {
         $mail->setFrom('elvira.a.graf@gmail.com', 'Elvira Graf');
