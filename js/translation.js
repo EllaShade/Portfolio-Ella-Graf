@@ -81,4 +81,15 @@ const translations = {
       EN: "Placeholder: Embark on a journey through time on our website, where you can effortlessly compare and choose time zones globally, simplifying your cross-border planning. With user-friendly features and an intuitive interface, managing international schedules has never been more convenient.",
       DE: "Platzhalter: Machen Sie eine Zeitreise auf unserer Website, auf der Sie mühelos Zeitzonen weltweit vergleichen und auswählen können, um Ihre grenzüberschreitende Planung zu vereinfachen. Mit benutzerfreundlichen Funktionen und einer intuitiven Benutzeroberfläche war die Verwaltung internationaler Zeitpläne noch nie so bequem.",
     },
+
+  "Contact me": {
+    EN: "Contact me",
+    DE: "Kontaktiere mich",
+  },
+
+  "Feel free to reach out for more information or collaboration. I'm available for any inquiries, suggestions, or projects. Simply fill out the form, and I'll get back to you as soon as possible.":
+    {
+      EN: " Feel free to reach out for more information or collaboration. I'm available for any inquiries, suggestions, or projects. Simply fill out the form, and I'll get back to you as soon as possible.",
+      DE: " Kontaktieren Sie mich gerne für weitere Informationen oder Zusammenarbeit. Ich stehe Ihnen für Fragen, Anregungen oder Projekte zur Verfügung. Füllen Sie einfach das Formular aus, und ich werde mich so schnell wie möglich bei Ihnen melden.",
+    },
 };

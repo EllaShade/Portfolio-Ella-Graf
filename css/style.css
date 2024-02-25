@@ -404,7 +404,10 @@ li {
 }
 
 .contact-me-text {
-  margin-bottom: 60px;
+  margin-top: 80px;
+}
+.contact-text {
+  font-size: 18px;
 }
 
 .input-contact {
@@ -540,5 +543,10 @@ li {
 
   .skills-description {
     margin: 15px 15px 35px 15px;
+  }
+  /*contact*/
+
+  .contact-me-text {
+    margin-top: 15px;
   }
 }
