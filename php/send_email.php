@@ -1,4 +1,7 @@
+
+
 <?php
+
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
@@ -7,6 +10,7 @@ require 'path/to/PHPMailer/src/PHPMailer.php';
 require 'path/to/PHPMailer/src/SMTP.php';
 
 if(isset($_POST['name']) && isset($_POST['email']) && isset($_POST['message'])) {
+
     $to = "elvira.a.graf@gmail.com"; 
     $subject = "Neue Nachricht von " . $_POST['name'];
     $message = "Name: " . $_POST['name'] . "\n\n";
@@ -20,11 +24,12 @@ if(isset($_POST['name']) && isset($_POST['email']) && isset($_POST['message'])) 
     $mail->Host = 'smtp.gmail.com';
     $mail->SMTPAuth = true;
     $mail->Username = 'elvira.a.graf@gmail.com'; 
-    $mail->Password = 'Michael08331*'; 
+    $mail->Password = '--'; 
     $mail->SMTPSecure = 'tls'; 
     $mail->Port = 587; 
 
     try {
+
         $mail->setFrom('elvira.a.graf@gmail.com', 'Elvira Graf');
         $mail->addAddress($to);
         $mail->Subject = $subject;
@@ -32,10 +37,17 @@ if(isset($_POST['name']) && isset($_POST['email']) && isset($_POST['message'])) 
 
         $mail->send();
         echo "Message sent successfully!";
+
     } catch (Exception $e) {
+
         echo "Error sending message. Mailer Error: {$mail->ErrorInfo}";
     }
+
 } else {
+
     echo "Error: Incomplete data.";
 }
+
 ?>
+
+
