@@ -115,11 +115,11 @@
       <div class="input-contact">
         <form
           id="contactForm"
-          action="mailto:elvira.a.graf@gmail.com"
-          method="post"
+          action="https://formspree.io/f/mayrpjqv"
+          method="POST"
           enctype="text/plain"
         >
-          <div class="input-group justify-content-center">
+          <label class="input-group justify-content-center">
             <span class="input-group-text">Name</span>
             <input
               type="text"
@@ -130,9 +130,9 @@
               name="name"
               required
             />
-          </div>
+          </label>
           <br />
-          <div class="input-group flex-nowrap">
+          <label class="input-group flex-nowrap">
             <span class="input-group-text" id="addon-wrapping">@</span>
             <input
               type="email"
@@ -144,9 +144,9 @@
               name="email"
               required
             />
-          </div>
+          </label>
           <br />
-          <div class="input-group">
+          <label class="input-group">
             <textarea
               class="form-control"
               placeholder="Write here a message"
@@ -155,7 +155,7 @@
               rows="4"
               required
             ></textarea>
-          </div>
+          </label>
           <br />
           <button
             type="submit"
