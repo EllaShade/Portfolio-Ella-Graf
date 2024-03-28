@@ -467,7 +467,7 @@ const translations = {
 
   ThankYouMessage: {
     EN: "Thanks for reaching out! I'll be in touch shortly!",
-    DE: "Vielen Dank für deine Kontaktaufnahme! Ich werde mich in Kürze bei dir melden.",
+    DE: "Vielen Dank für die Kontaktaufnahme! Ich werde mich in Kürze melden.",
   },
 
   SendMessageBtn: {
