@@ -216,8 +216,8 @@ i {
 
 .photo-image {
   transition: transform 0.8s ease-in;
-  max-width: 450px !important;
-  min-width: 450px;
+  max-width: 500px !important;
+  min-width: 500px;
   opacity: 0.5;
 }
 
@@ -463,6 +463,27 @@ li {
 }
 
 @media only screen and (max-width: 900px) {
+  .navbar {
+    background-color: #eee5d8 !important;
+    opacity: 0.8;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    height: 64px;
+  }
+
+  .navbar-toggler {
+    margin: 2px 10px;
+    padding: 7px !important;
+  }
+  .navbar-about {
+    margin-right: 60px;
+  }
+
+  label {
+    margin-top: 8px;
+  }
+
   input.check-toggle-round-flat + label {
     padding: 2px;
     width: 88px;
@@ -475,7 +496,7 @@ li {
   }
 
   .switch > span {
-    top: 6px;
+    top: 15px;
     font-size: 12px;
   }
 
@@ -484,6 +505,9 @@ li {
     left: 4px;
     bottom: 4px;
     width: 36px;
+  }
+  .on {
+    top: -6px;
   }
 
   .logo {

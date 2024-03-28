@@ -100,8 +100,8 @@ const translations = {
   },
 
   welcomeDeveloper: {
-    EN: "Frontend Developer, based in Switzerland.",
-    DE: "Frontend-Entwicklerin mit Sitz in der Schweiz.",
+    EN: "Frontend Developer, based in Switzerland, Berlingen.",
+    DE: "Frontend-Entwicklerin mit Sitz in der Schweiz, Berlingen.",
   },
 
   welcomeGetStarted: {
@@ -192,20 +192,6 @@ const translations = {
     DE: "Tauche ein in die Einfachheit unserer Wetter-App. Erhalte sofortigen Zugang zu aktuellen Wetterbedingungen und einer prägnanten Wettervorhersage. Erlebe eine unkomplizierte und angenehme Wetterverfolgung.",
   },
 
-  projectPianoPassion: {
-    EN: "Piano Passion",
-    DE: "Piano Passion",
-  },
-  projectPianoPassionDescription: {
-    EN: "Harmony Unleashed: A Musical Journey through the Piano's Past and Present",
-    DE: "Harmony Unleashed: Eine musikalische Reise durch die Vergangenheit und Gegenwart des Klaviers",
-  },
-
-  projectPianoPassionDetails: {
-    EN: "Dive into the world of piano mastery with our website dedicated to this timeless instrument. Explore the rich history of the piano, toggle between light and dark modes for a personalized experience, and even listen to beautiful piano compositions at the click of a button. Embark on a musical odyssey with our interactive piano haven.",
-    DE: "Tauche ein in die Welt der Klaviermeisterschaft mit unserer Website, die diesem zeitlosen Instrument gewidmet ist. Erkunde die reiche Geschichte des Klaviers, wechsle zwischen Licht- und Dunkelmodus für ein personalisiertes Erlebnis und höre sogar auf Knopfdruck wunderschöne Klavierkompositionen. Mach dich auf eine musikalische Odyssee mit unserem interaktiven Klavierparadies.",
-  },
-
   /*about-me*/
 
   aboutpageTitle: {
@@ -219,8 +205,8 @@ const translations = {
   },
 
   aboutMeCard: {
-    EN: "As a passionate Frontend Developer, I weave digital magic through code, crafting seamless and visually captivating user experiences. With a keen eye for design and a love for elegant solutions, I embark on a journey to bring ideas to life in the ever-evolving web landscape. Each line of code is an expression of my dedication to transforming concepts into interactive, user-friendly interfaces that not only meet but exceed expectations. As I navigate the intricate dance between creativity and functionality, I am driven by the belief that exceptional web design goes beyond aesthetics - it's about creating a symphony of elements that resonate with users and elevate their online interactions to a delightful crescendo.",
-    DE: "Als leidenschaftliche Frontend-Entwicklerin zaubere ich digitale Magie durch Code und schaffe nahtlose und visuell fesselnde Benutzererfahrungen. Mit einem geschulten Auge für Design und einer Liebe für elegante Lösungen begebe ich mich auf eine Reise, um Ideen im ständig wandelnden Web-Landschaft zum Leben zu erwecken. Jede Codezeile ist ein Ausdruck meiner Hingabe, Konzepte in interaktive, benutzerfreundliche Oberflächen zu verwandeln, die nicht nur den Erwartungen entsprechen, sondern sie übertreffen. Während ich den komplexen Tanz zwischen Kreativität und Funktionalität navigiere, treibt mich der Glaube an, dass außergewöhnliches Webdesign über Ästhetik hinausgeht - es geht darum, eine Symphonie von Elementen zu schaffen, die mit den Benutzern resonieren und ihre Online-Interaktionen zu einem bezaubernden Crescendo führen.",
+    EN: "As a Frontend Wizard, I conjure digital wonders through the power of code, crafting user experiences that are as seamless as a wizard's spell and visually captivating as a magical potion. With a keen eye for design and a knack for elegant solutions, I embark on an epic quest to bring ideas to life in the ever-evolving web realm. Each line of code is a magical incantation, woven with care to transform concepts into interactive, user-friendly interfaces that not only meet but surpass expectations. As I navigate the intricate dance between creativity and functionality, I am fueled by the belief that exceptional web design is akin to conducting a symphony - harmonizing elements to create a delightful online experience that leaves users spellbound.",
+    DE: "Als Frontend-Entwickler zaubere ich digitale Wunder durch die Macht des Codes, indem ich Benutzererlebnisse kreiere, die so nahtlos sind wie ein Zauberspruch und so visuell ansprechend wie ein magischer Trank. Mit einem geschulten Auge für Design und einem Gespür für elegante Lösungen begebe ich mich auf eine epische Quest, um Ideen im ständig wandelnden Web-Universum zum Leben zu erwecken. Jede Codezeile ist eine magische Beschwörung, mit Sorgfalt gewoben, um Konzepte in interaktive, benutzerfreundliche Schnittstellen zu verwandeln, die nicht nur Erwartungen erfüllen, sondern übertreffen. Während ich den komplexen Tanz zwischen Kreativität und Funktionalität navigiere, treibt mich der Glaube an, dass außergewöhnliches Webdesign dem Dirigieren einer Symphonie ähnelt - Elemente harmonisieren, um ein bezauberndes Online-Erlebnis zu schaffen, das die Benutzer verzaubert.",
   },
 
   AboutMe: {
@@ -241,11 +227,6 @@ const translations = {
   AboutMeLi3: {
     EN: "Advanced proficiency in HTML, CSS, JavaScript, and React",
     DE: "Fortgeschrittene Kenntnisse in HTML, CSS, JavaScript und React",
-  },
-
-  AboutMeLi4: {
-    EN: "Deepening knowledge with CS50 at Harvard",
-    DE: "Vertiefung des Wissens mit CS50 an der Harvard-Universität",
   },
 
   Skills: {
@@ -372,11 +353,6 @@ const translations = {
   projectWeatherAppDescriptionWork: {
     EN: "Stay ahead of the elements with our Weather Insights App. 🌦️ Enter the city of your choice and instantly access real-time information including current time, humidity, and wind speed. The app's clean and adaptable design ensures a seamless experience on both desktop and smartphone screens. 📱 Dive deeper into the forecast with a detailed outlook for the next 5 days, providing you with the essential information you need for any plans. Embrace weather awareness in a user-friendly package, tailored for your convenience. 🌐",
     DE: "Bleiben Sie mit unserer Wetter Insights App stets einen Schritt voraus. 🌦️ Geben Sie die Stadt Ihrer Wahl ein und erhalten Sie sofortigen Zugriff auf Echtzeitinformationen wie aktuelle Uhrzeit, Luftfeuchtigkeit und Windgeschwindigkeit. Das saubere und anpassungsfähige Design der App sorgt für ein nahtloses Erlebnis sowohl auf Desktop- als auch auf Smartphone-Bildschirmen. 📱 Tauchen Sie tiefer in die Vorhersage ein mit einem detaillierten Ausblick für die nächsten 5 Tage, der Ihnen die wesentlichen Informationen liefert, die Sie für jede Planung benötigen. Nutzen Sie Wetterbewusstsein in einem benutzerfreundlichen Paket, maßgeschneidert für Ihre Bequemlichkeit. 🌐",
-  },
-
-  projectPianoPassionDescriptionWork: {
-    EN: "Immerse yourself in the world of piano melodies with our Piano Harmony Experience. Explore the rich history of the piano, accompanied by captivating images that come to life as you hover over them on larger screens. Switch between light and dark themes to tailor the visual experience to your mood. The interactive buttons beneath the images unlock a musical surprise – hit the button, enter your name in the alert, and let the piano serenade you with a delightful tune. Experience the fusion of music, history, and interactivity in this piano lover's haven. 🎹🎶",
-    DE: "Tauche ein in die Welt der Klaviermelodien mit unserer Piano Harmony Experience. Erkunde die reiche Geschichte des Klaviers, begleitet von faszinierenden Bildern, die sich auf größeren Bildschirmen beim Überfahren lebendig werden. Wechsle zwischen hellen und dunklen Themen, um das visuelle Erlebnis an deine Stimmung anzupassen. Die interaktiven Schaltflächen unter den Bildern öffnen eine musikalische Überraschung - drücke die Taste, gib deinen Namen in das Popup-Fenster ein und lass dich vom Klavier mit einer herrlichen Melodie verzaubern. Erlebe die Verschmelzung von Musik, Geschichte und Interaktivität in diesem Paradies für Klavierliebhaber. 🎹🎶",
   },
 
   FrontendWork: {
