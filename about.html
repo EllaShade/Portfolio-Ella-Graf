@@ -14,7 +14,23 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-    <title>About | Overview the projects and the pictures of Ellas work</title>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/beaf6e1073.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="js/index.js"></script>
+
+    <title data-translate="aboutpageTitle">
+      About | Overview the projects and the pictures of Ellas work
+    </title>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -34,11 +50,10 @@
               id="language-toggle"
               class="check-toggle check-toggle-round-flat"
               type="checkbox"
-              onclick="toggleLanguage()"
             />
             <label for="language-toggle"></label>
-            <span class="on" data-lang="DE">DE</span>
-            <span class="off" data-lang="EN">EN</span>
+            <span class="on" data-lang="DE" data-translate="langDE">GE</span>
+            <span class="off" data-lang="EN" data-translate="langEN">EN</span>
           </span></a
         >
         <button
@@ -66,14 +81,25 @@
                 aria-current="page"
                 href="about.html"
                 titel="About-Ella"
+                data-translate="navAbout"
                 >About</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="work.html" titel="Ellas-work">Work</a>
+              <a
+                class="nav-link"
+                href="work.html"
+                titel="Ellas-work"
+                data-translate="navWork"
+                >Work</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="contact.html" titel="contact Ella"
+              <a
+                class="nav-link"
+                href="contact.html"
+                titel="contact Ella"
+                data-translate="navContact"
                 >Contact</a
               >
             </li>
@@ -84,11 +110,15 @@
     <div class="container about-container">
       <div class="row d-flex justify-content-evenly p-5 mt-5 about-me">
         <div class="col-md-6 about-me-text">
-          <h1 class="name-about">Hi I am Elvira Angelina Graf</h1>
+          <h1 class="name-about" data-translate="welcomeAbout">
+            Hi I am Elvira Angelina Graf
+          </h1>
           <br />
-          <h3>Frontend Developer, based in Swiss.</h3>
+          <h3 data-translate="welcomeDeveloper">
+            Frontend Developer, based in Switzerland.
+          </h3>
           <br />
-          <p>
+          <p data-translate="aboutMeCard">
             As a passionate Frontend Developer, I weave digital magic through
             code, crafting seamless and visually captivating user experiences.
             With a keen eye for design and a love for elegant solutions, I
@@ -103,7 +133,9 @@
           </p>
           <br />
           <button type="button" class="btn btn-primary btn-lg">
-            <a href="work.html" class="link-button">View all projects</a>
+            <a href="work.html" class="link-button" data-translate="viewProject"
+              >View all projects</a
+            >
           </button>
         </div>
         <div class="col-md-6 d-flex justify-content-center">
@@ -116,50 +148,86 @@
       </div>
       <div class="card">
         <div class="card-body">
-          <h5 class="card-title">About Me</h5>
+          <h5 class="card-title" data-translate="AboutMe">About Me</h5>
           <span class="card-text">
             <ul>
-              <li>Aspiring frontend developer</li>
-              <li>Currently completing SheCodes program</li>
-              <li>Learning HTML, CSS, and JavaScript</li>
-              <li>Deepening knowledge with CS50 at Harvard</li>
+              <li data-translate="AboutMeLi1">Frontend developer</li>
+              <li data-translate="AboutMeLi2">
+                Successfully completed SheCodes program
+              </li>
+              <li data-translate="AboutMeLi3">
+                Advanced proficiency in HTML, CSS, JavaScript, and React
+              </li>
+              <li data-translate="AboutMeLi4">
+                Deepening knowledge with CS50 at Harvard
+              </li>
             </ul>
             <br />
 
-            <h3>My Skills Include</h3>
+            <h3 data-translate="Skills">My Skills include</h3>
 
             <ul>
-              <li>Solid knowledge of HTML, CSS, and JavaScript</li>
-              <li>Responsive web design principles</li>
-              <li>Building interactive and user-friendly interfaces</li>
+              <li data-translate="SkillsLi1">
+                HTML, CSS, and JavaScript proficiency
+              </li>
+              <li data-translate="SkillsLi2">
+                Experience with VSCode, API integration, Git, and GitHub
+              </li>
+              <li data-translate="SkillsLi3">
+                Knowledge of hosting services and AI technologies
+              </li>
+              <li data-translate="SkillsLi4">
+                Familiarity with Bootstrap for rapid development
+              </li>
+              <li data-translate="SkillsLi5">
+                Understanding of SEO principles
+              </li>
+              <li data-translate="SkillsLi6">
+                Expertise in responsive web design
+              </li>
+              <li data-translate="SkillsLi7">
+                Proficient in React.js for dynamic web applications
+              </li>
             </ul>
             <br />
-            <h3>My Interests and Focus Areas</h3>
+
+            <h3 data-translate="Interests">My Interests and Focus Areas</h3>
 
             <ul>
-              <li>Web animations and interactivity</li>
-              <li>UI/UX design principles</li>
-              <li>Project management with agile development methods</li>
+              <li data-translate="InterestsLi1">
+                Web animations and interactivity
+              </li>
+              <li data-translate="InterestsLi2">UI/UX design principles</li>
+              <li data-translate="InterestsLi3">
+                Project management with agile development methods
+              </li>
             </ul>
             <br />
-            <h3>Learning Environment</h3>
+            <h3 data-translate="Learning">Learning Environment</h3>
 
             <ul>
-              <li>SheCodes: Intensive frontend development program</li>
-              <li>
+              <li data-translate="LearningLi1">
+                SheCodes: Intensive frontend development program
+              </li>
+              <li data-translate="LearningLi2">
                 CS50 (Harvard): Deepening knowledge in algorithmic concepts and
                 software development
               </li>
             </ul>
             <br />
-            <p class="about-me-card">
+            <p class="about-me-card" data-translate="AboutText">
               I look forward to applying my acquired skills in practice and
               realizing innovative web projects.
             </p>
             <br />
           </span>
           <button class="btn btn-primary">
-            <a href="contact.html" class="link-button">Contact me</a>
+            <a
+              href="contact.html"
+              class="link-button"
+              data-translate="ContactMe"
+              >Contact me</a
+            >
           </button>
         </div>
       </div>
@@ -209,17 +277,5 @@
         </div>
       </footer>
     </div>
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-    <script
-      src="https://kit.fontawesome.com/beaf6e1073.js"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
-
-    <script src="js/index.js"></script>
   </body>
 </html>

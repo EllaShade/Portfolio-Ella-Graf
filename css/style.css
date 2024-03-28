@@ -15,6 +15,7 @@ header {
   width: 100%;
   top: 0;
   z-index: 1000;
+  height: 55px;
 }
 
 .nav-item {
@@ -32,7 +33,7 @@ header {
 }
 
 .mini-logo {
-  width: 45px;
+  width: 40px;
 }
 
 .switch {
@@ -215,7 +216,8 @@ i {
 
 .photo-image {
   transition: transform 0.8s ease-in;
-  width: 450px !important;
+  max-width: 450px !important;
+  min-width: 450px;
   opacity: 0.5;
 }
 
@@ -223,9 +225,6 @@ i {
   opacity: 1;
   transform: scale(1.2);
   border: 6px solid rgba(79, 121, 66, 0.5);
-}
-.img-fluid {
-  width: 400px;
 }
 
 .btn-primary {
@@ -415,7 +414,13 @@ li {
 /* contact*/
 
 .contact-container {
-  margin: 150px auto 60px auto;
+  margin: 150px auto 50px auto;
+  background-color: var(--primary-color);
+  border-radius: 6px;
+}
+.name-contact {
+  color: #1f0404;
+  font-weight: 400;
 }
 
 .contact-me-text {
@@ -433,8 +438,31 @@ li {
   font-size: 22px;
   font-family: "Poppins", sans-serif;
 }
+#thank-you {
+  text-align: center;
+  font-size: 40px;
+  margin: 70px 40px;
+  padding: 50px 20px 200px;
+  animation: pulse 4s infinite alternate;
+  transition: font-size 0.5s ease, color 0.5s ease;
+  color: #000;
+}
+@keyframes pulse {
+  0% {
+    font-size: 40px;
+    color: #000;
+  }
+  100% {
+    font-size: 44px;
+    color: #588858;
+  }
+}
 
-@media only screen and (max-width: 800px) {
+.hidden {
+  display: none;
+}
+
+@media only screen and (max-width: 900px) {
   input.check-toggle-round-flat + label {
     padding: 2px;
     width: 88px;

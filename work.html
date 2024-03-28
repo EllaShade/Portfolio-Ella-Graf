@@ -14,7 +14,22 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-    <title>Work| Overview the projects of Elvira Graf</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/beaf6e1073.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="js/index.js"></script>
+
+    <title data-translation="workTitle">
+      Work| Overview the projects of Elvira Graf
+    </title>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -34,11 +49,10 @@
               id="language-toggle"
               class="check-toggle check-toggle-round-flat"
               type="checkbox"
-              onclick="toggleLanguage()"
             />
             <label for="language-toggle"></label>
-            <span class="on" data-lang="DE">DE</span>
-            <span class="off" data-lang="EN">EN</span>
+            <span class="on" data-lang="DE" data-translate="langDE">GE</span>
+            <span class="off" data-lang="EN" data-translate="langEN">EN</span>
           </span></a
         >
         <button
@@ -61,22 +75,33 @@
               <a class="nav-link" href="index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="about.html">About</a>
+              <a class="nav-link" href="about.html" data-translate="navAbout"
+                >About</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="work.html"
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="work.html"
+                data-translate="navWork"
                 >Work</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact</a>
+              <a
+                class="nav-link"
+                href="contact.html"
+                data-translate="navContact"
+                >Contact</a
+              >
             </li>
           </ul>
         </div>
       </div>
     </nav>
     <div class="container">
-      <h1 class="work-headline">My Projects</h1>
+      <h1 class="work-headline" data-translate="titleProjects">My Projects</h1>
       <div class="row d-flex justify-content-evenly p-3 mt-1">
         <div id="carouselExampleFade" class="carousel slide carousel-fade">
           <div class="carousel-indicators">
@@ -106,92 +131,269 @@
               data-bs-slide-to="3"
               aria-label="Slide 4"
             ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="4"
+              aria-label="Slide 5"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="5"
+              aria-label="Slide 6"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="6"
+              aria-label="Slide 0"
+            ></button>
           </div>
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img
-                src="images/World-Clocks-Project-Work.png"
-                class="d-block w-100"
-                alt="the-world-clock-project"
-              />
-              <h3 class="work-description-headline">The World Clocks</h3>
-              <p class="work-description">
-                Embark on a journey through time on our website, where you can
-                effortlessly compare and choose time zones globally, simplifying
-                your cross-border planning. With user-friendly features and an
-                intuitive interface, managing international schedules has never
-                been more convenient.
+              <a
+                href="https://dictionary-cyclopedia.netlify.app/"
+                target="_blank"
+              >
+                <img
+                  src="images/Dictionary-project.png"
+                  class="d-block w-100"
+                  alt="the-dictionary-project"
+              /></a>
+              <h3
+                class="work-description-headline"
+                data-translate="projectDictionary"
+              >
+                Dictionary
+              </h3>
+              <p
+                class="work-description"
+                data-translate="projectDictionaryDescriptionWork"
+              >
+                Immerse yourself in the fascinating world of words with our
+                interactive dictionary. Discover correct spellings effortlessly,
+                listen to precise pronunciations, explore definitions, examples,
+                and synonyms. We also provide illustrated images and phonetic
+                spellings. With our user-friendly features and intuitive
+                interface, finding words and their meanings has never been
+                easier.
+              </p>
+              <div class="link-to-project">
+                <a
+                  href="https://dictionary-cyclopedia.netlify.app/"
+                  target="_blank"
+                  data-translate="projectButton"
+                >
+                  Click here to see the whole project</a
+                >
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <a
+                href="https://weather-forecast-jsx.netlify.app/"
+                target="_blank"
+              >
+                <img
+                  src="images/Weather-app-react-project.png"
+                  class="d-block w-100"
+                  alt="the-weather-app-react-project"
+              /></a>
+              <h3
+                class="work-description-headline"
+                data-translate="projectWeatherAppReact"
+              >
+                Weather-App in React
+              </h3>
+              <p
+                class="work-description"
+                data-translate="projectWeatherAppReactDescriptionWork"
+              >
+                Stay up-to-date with live weather updates, covering temperature,
+                humidity, wind speed, and more. Dynamic animated icons reflect
+                current weather conditions as the background adapts accordingly.
+                Our intuitive interface ensures effortless access to the latest
+                weather information.
+              </p>
+              <div class="link-to-project">
+                <a
+                  href="https://weather-forecast-jsx.netlify.app/"
+                  target="_blank"
+                  data-translate="projectButton"
+                >
+                  Click here to see the whole project</a
+                >
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <a href="https://korean-skin-care.netlify.app/" target="_blank">
+                <img
+                  src="images/Korean-Skincare-project.png"
+                  class="d-block w-100"
+                  alt="korean-skincare-project"
+              /></a>
+              <h3
+                class="work-description-headline"
+                data-translate="projectKoreanSkincare"
+              >
+                Korean Skincare
+              </h3>
+              <p
+                class="work-description"
+                data-translate="projectKoreanSkincareDescriptionWork"
+              >
+                Dive into the world of Korean skincare with our interactive
+                website/app. Explore curated skincare routines and products, and
+                stay connected with us through our contact form. Experience a
+                seamless interface designed to enhance your skincare journey.
+              </p>
+              <div class="link-to-project">
+                <a
+                  href="https://korean-skin-care.netlify.app/"
+                  target="_blank"
+                  data-translate="projectButton"
+                >
+                  Click here to see the whole project</a
+                >
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <a
+                href="https://world-clock-old-money.netlify.app/"
+                target="_blank"
+              >
+                <img
+                  src="images/World-Clocks-Project-Work.png"
+                  class="d-block w-100"
+                  alt="the-world-clock-project"
+              /></a>
+              <h3
+                class="work-description-headline"
+                data-translate="projectWorldClocks"
+              >
+                The World Clocks
+              </h3>
+              <p
+                class="work-description"
+                data-translate="projectWorldClocksDescriptionWork"
+              >
+                Explore global time zones effortlessly with our World Clock web
+                application. Track time in various cities around the world,
+                including London, New York, Seoul, and more. Seamlessly switch
+                between locations using our intuitive interface. Created with
+                passion by Ella Graf, this project is open-source and available
+                on GitHub. Stay connected to different time zones with World
+                Clock! 🌐⏰
               </p>
               <div class="link-to-project">
                 <a
                   href="https://world-clock-old-money.netlify.app/"
                   target="_blank"
+                  data-translate="projectButton"
                 >
                   Click here to see the whole project</a
                 >
               </div>
-
-              <br />
             </div>
             <div class="carousel-item">
-              <img
-                src="images/rhyme-alchemist-project-work.png"
-                class="d-block w-100"
-                alt="poem-ai-generator"
-              />
-              <h3 class="work-description-headline">The Rhyme-Alchemist</h3>
-              <p class="work-description">
-                Immerse yourself in the world of poetic expression with Rhyme
-                Alchemist. This AI-powered French Poetry Generator turns a
-                single word into a beautifully crafted French poem. The striking
-                red theme, coupled with sleek design and user-friendly
-                interface, creates an engaging experience. Glow effects add a
-                touch of magic to the poetry creation process, making it not
-                just a tool but a creative journey. Explore the art of words
-                with Rhyme Alchemist and unlock the beauty of French verses at
-                your fingertips.
+              <a href="https://rhyme-alchemist.netlify.app/" target="_blank">
+                <img
+                  src="images/rhyme-alchemist-project-work.png"
+                  class="d-block w-100"
+                  alt="poem-ai-generator"
+              /></a>
+              <h3
+                class="work-description-headline"
+                data-translate="projectRhymeAlchemist"
+              >
+                The Rhyme-Alchemist
+              </h3>
+              <p
+                class="work-description"
+                data-translate="projectRhymeAlchemistDescriptionWork"
+              >
+                Immerse yourself in the world of poetry with our AI Rhyme
+                Alchemist. Create beautiful poems effortlessly with the power of
+                AI. Our project, "Rhyme Alchemist," allows you to craft rhyming
+                poems seamlessly. Simply input a word you'd like to rhyme, and
+                let the magic of AI take over. This AI project was crafted with
+                love by Ella Graf and is open-sourced on GitHub. It's also
+                hosted on Netlify. Give it a try and unleash your creativity!
+                📝✨
               </p>
+
               <div class="link-to-project">
-                <a href="https://rhyme-alchemist.netlify.app/" target="_blank">
+                <a
+                  href="https://rhyme-alchemist.netlify.app/"
+                  target="_blank"
+                  data-translate="projectButton"
+                >
                   Click here to see the whole project</a
                 >
               </div>
             </div>
+
             <div class="carousel-item">
-              <img
-                src="images/weather-app-project-work.png"
-                class="d-block w-100"
-                alt="weather-app"
-              />
-              <h3 class="work-description-headline">The Weather App</h3>
-              <p class="work-description">
-                Stay ahead of the elements with our Weather Insights App. Enter
-                the city of your choice and instantly access real-time
+              <a
+                href="https://weather-forecast-app-old-money.netlify.app/"
+                target="_blank"
+              >
+                <img
+                  src="images/weather-app-project-work.png"
+                  class="d-block w-100"
+                  alt="weather-app"
+              /></a>
+              <h3
+                class="work-description-headline"
+                data-translate="projectWeatherApp"
+              >
+                The Weather App
+              </h3>
+              <p
+                class="work-description"
+                data-translate="projectWeatherAppDescriptionWork"
+              >
+                Stay ahead of the elements with our Weather Insights App. 🌦️
+                Enter the city of your choice and instantly access real-time
                 information including current time, humidity, and wind speed.
                 The app's clean and adaptable design ensures a seamless
-                experience on both desktop and smartphone screens. Dive deeper
-                into the forecast with a detailed outlook for the next 5 days,
-                providing you with the essential information you need for any
-                plans. Embrace weather awareness in a user-friendly package,
-                tailored for your convenience.
+                experience on both desktop and smartphone screens. 📱 Dive
+                deeper into the forecast with a detailed outlook for the next 5
+                days, providing you with the essential information you need for
+                any plans. Embrace weather awareness in a user-friendly package,
+                tailored for your convenience. 🌐
               </p>
               <div class="link-to-project">
                 <a
                   href="https://weather-forecast-app-old-money.netlify.app/"
                   target="_blank"
+                  data-translate="projectButton"
                 >
                   Click here to see the whole project</a
                 >
               </div>
             </div>
+
             <div class="carousel-item">
-              <img
-                src="images/Piano-Project-Work.png"
-                class="d-block w-100"
-                alt="piano-project-on-different-devices"
-              />
-              <h3 class="work-description-headline">Piano-Project</h3>
-              <p class="work-description">
+              <a href="https://piano-passion.netlify.app/" target="_blank">
+                <img
+                  src="images/Piano-Project-Work.png"
+                  class="d-block w-100"
+                  alt="piano-project-on-different-devices"
+              /></a>
+              <h3
+                class="work-description-headline"
+                data-translate="projectPianoPassion"
+              >
+                Piano-Project
+              </h3>
+              <p
+                class="work-description"
+                data-translate="projectPianoPassionDescriptionWork"
+              >
                 Immerse yourself in the world of piano melodies with our Piano
                 Harmony Experience. Explore the rich history of the piano,
                 accompanied by captivating images that come to life as you hover
@@ -204,7 +406,11 @@
                 haven.
               </p>
               <div class="link-to-project">
-                <a href="https://piano-passion.netlify.app/" target="_blank">
+                <a
+                  href="https://piano-passion.netlify.app/"
+                  target="_blank"
+                  data-translate="projectButton"
+                >
                   Click here to see the whole project</a
                 >
               </div>
@@ -232,82 +438,130 @@
       </div>
       <div class="card">
         <div class="card-body">
-          <h5 class="card-title-work">Frontend Developer Skills</h5>
+          <h5 class="card-title-work" data-translate="FrontendWork">
+            Frontend Developer Skills
+          </h5>
           <div class="card-text">
             <ul>
               <li>
                 <h2 class="skills-titel">HTML/CSS/JavaScript</h2>
-                <p class="skills-description">
+                <p
+                  class="skills-description"
+                  data-translate="FrontendWork1Description"
+                >
                   Proficient in creating webpage structures using HTML, styling
                   elements with CSS, and implementing interactive features
-                  through JavaScript.
+                  through JavaScript (Vanilla & React).
                 </p>
               </li>
               <li>
-                <h2 class="skills-titel">Responsive Web Design</h2>
-                <p class="skills-description">
+                <h2 class="skills-titel" data-translate="FrontendWork2Titel">
+                  Responsive Web Design
+                </h2>
+                <p
+                  class="skills-description"
+                  data-translate="FrontendWork2Description"
+                >
                   Experience in developing websites that adapt to various
                   devices and screen sizes to ensure an optimal user experience.
                 </p>
               </li>
               <li>
-                <h2 class="skills-titel">
+                <h2 class="skills-titel" data-translate="FrontendWork3Titel">
                   JavaScript Frameworks and Libraries
                 </h2>
-                <p class="skills-description">
+                <p
+                  class="skills-description"
+                  data-translate="FrontendWork3Description"
+                >
                   Deep expertise in at least one JavaScript framework such as
                   React, Angular, or Vue.js to create complex and engaging user
                   interfaces.
                 </p>
               </li>
               <li>
-                <h2 class="skills-titel">Version Control/Git</h2>
-                <p class="skills-description">
+                <h2 class="skills-titel" data-translate="FrontendWork4Titel">
+                  Version Control/Git
+                </h2>
+                <p
+                  class="skills-description"
+                  data-translate="FrontendWork4Description"
+                >
                   Proficient in using version control systems, particularly Git,
                   for collaborative development and code management.
                 </p>
               </li>
               <li>
-                <h2 class="skills-titel">Build Tools/Task Runners</h2>
-                <p class="skills-description">
+                <h2 class="skills-titel" data-translate="FrontendWork5Titel">
+                  Build Tools/Task Runners
+                </h2>
+                <p
+                  class="skills-description"
+                  data-translate="FrontendWork5Description"
+                >
                   Experience with build tools like Webpack or task runners like
                   Gulp to streamline the development workflow and optimize code.
                 </p>
               </li>
               <li>
-                <h2 class="skills-titel">Web Performance Optimization</h2>
-                <p class="skills-description">
+                <h2 class="skills-titel" data-translate="FrontendWork6Titel">
+                  Web Performance Optimization
+                </h2>
+                <p
+                  class="skills-description"
+                  data-translate="FrontendWork6Description"
+                >
                   Knowledge of techniques to optimize website performance,
                   including lazy loading, code splitting, and minimizing HTTP
                   requests.
                 </p>
               </li>
               <li>
-                <h2 class="skills-titel">Cross-Browser Compatibility</h2>
-                <p class="skills-description">
+                <h2 class="skills-titel" data-translate="FrontendWork7Titel">
+                  Cross-Browser Compatibility
+                </h2>
+                <p
+                  class="skills-description"
+                  data-translate="FrontendWork7Description"
+                >
                   Ensuring that web applications work consistently across
                   various browsers and platforms, addressing compatibility
                   issues.
                 </p>
               </li>
               <li>
-                <h2 class="skills-titel">Testing/Debugging</h2>
-                <p class="skills-description">
+                <h2 class="skills-titel" data-translate="FrontendWork8Titel">
+                  Testing/Debugging
+                </h2>
+                <p
+                  class="skills-description"
+                  data-translate="FrontendWork8Description"
+                >
                   Proficient in testing methodologies and debugging techniques
                   to identify and resolve issues during the development process.
                 </p>
               </li>
               <li>
-                <h2 class="skills-titel">UI/UX Design Principles</h2>
-                <p class="skills-description">
+                <h2 class="skills-titel" data-translate="FrontendWork9Titel">
+                  UI/UX Design Principles
+                </h2>
+                <p
+                  class="skills-description"
+                  data-translate="FrontendWork9Description"
+                >
                   Understanding of user interface and user experience design
                   principles to create visually appealing and user-friendly
                   interfaces.
                 </p>
               </li>
               <li>
-                <h2 class="skills-titel">Communication/Collaboration</h2>
-                <p class="skills-description">
+                <h2 class="skills-titel" data-translate="FrontendWork10Titel">
+                  Communication/Collaboration
+                </h2>
+                <p
+                  class="skills-description"
+                  data-translate="FrontendWork10Description"
+                >
                   Effective communication skills and ability to collaborate with
                   cross-functional teams, including designers and backend
                   developers.
@@ -316,7 +570,9 @@
             </ul>
           </div>
           <button class="btn btn-primary about-me-button">
-            <a href="about.html" class="link-button">Learn more about me</a>
+            <a href="about.html" class="link-button" data-translate="LearnMebtn"
+              >Learn more about me</a
+            >
           </button>
         </div>
       </div>
@@ -367,17 +623,5 @@
         </div>
       </footer>
     </div>
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-    <script
-      src="https://kit.fontawesome.com/beaf6e1073.js"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
-
-    <script src="js/index.js"></script>
   </body>
 </html>

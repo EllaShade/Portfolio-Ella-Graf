@@ -14,6 +14,18 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/beaf6e1073.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="js/index.js"></script>
     <title>Contact | Elvira Graf contact informations and contact form</title>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -26,21 +38,20 @@
   <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#"
-          ><img src="images/logo.png" alt="my-logo" class="mini-logo" /> Elvira
+        <a class="navbar-brand" href="#">
+          <img src="images/logo.png" alt="my-logo" class="mini-logo" /> Elvira
           Graf
           <span class="switch">
             <input
               id="language-toggle"
               class="check-toggle check-toggle-round-flat"
               type="checkbox"
-              onclick="toggleLanguage()"
             />
             <label for="language-toggle"></label>
-            <span class="on" data-lang="DE">DE</span>
-            <span class="off" data-lang="EN">EN</span>
-          </span></a
-        >
+            <span class="on" data-lang="DE" data-translate="langDE">GE</span>
+            <span class="off" data-lang="EN" data-translate="langEN">EN</span>
+          </span>
+        </a>
         <button
           class="navbar-toggler"
           type="button"
@@ -61,13 +72,21 @@
               <a class="nav-link" href="index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="about.html">About</a>
+              <a class="nav-link" href="about.html" data-translate="navAbout"
+                >About</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="work.html">Work</a>
+              <a class="nav-link" href="work.html" data-translate="navWork"
+                >Work</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="contact.html"
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="contact.html"
+                data-translate="navContact"
                 >Contact</a
               >
             </li>
@@ -78,10 +97,9 @@
     <div class="container contact-container">
       <div class="row d-flex justify-content-evenly p-5 mt-5">
         <div class="col-md-6 contact-me-text">
-          <h1 class="name-about">Contact me</h1>
-
+          <h1 class="name-contact" data-translate="ContactMe">Contact me</h1>
           <br />
-          <p class="contact-text">
+          <p class="contact-text" data-translate="ContactMeText">
             Feel free to reach out for more information or collaboration. I'm
             available for any inquiries, suggestions, or projects. Simply fill
             out the form, and I'll get back to you as soon as possible.
@@ -89,44 +107,67 @@
         </div>
         <div class="col-md-6 d-flex justify-content-center"></div>
       </div>
-      <div class="input-contact">
-        <div class="input-group justify-content-center">
-          <span class="input-group-text">Name</span>
-          <input
-            type="text"
-            aria-label="Name"
-            class="form-control"
-            placeholder="Your name"
-            id="nameInput"
-          />
-        </div>
-        <br />
-        <div class="input-group flex-nowrap">
-          <span class="input-group-text" id="addon-wrapping">@</span>
-          <input
-            type="text"
-            class="form-control"
-            placeholder="Your email"
-            aria-label="Username"
-            aria-describedby="addon-wrapping"
-            id="emailInput"
-          />
-        </div>
-        <br />
-        <div class="input-group">
-          <textarea
-            class="form-control"
-            placeholder="Write here a message"
-            id="messageInput"
-          ></textarea>
-        </div>
-        <br />
-        <button type="button" class="btn btn-primary btn-lg" id="sendButton">
-          Send Message
-        </button>
-        <br /><br />
+
+      <div id="thank-you" class="hidden" data-translate="ThankYouMessage">
+        Thanks for reaching out! I'll be in touch shortly!
       </div>
 
+      <div class="input-contact">
+        <form
+          id="contactForm"
+          action="mailto:elvira.a.graf@gmail.com"
+          method="post"
+          enctype="text/plain"
+        >
+          <div class="input-group justify-content-center">
+            <span class="input-group-text">Name</span>
+            <input
+              type="text"
+              aria-label="Name"
+              class="form-control"
+              placeholder="Your name"
+              id="nameInput"
+              name="name"
+              required
+            />
+          </div>
+          <br />
+          <div class="input-group flex-nowrap">
+            <span class="input-group-text" id="addon-wrapping">@</span>
+            <input
+              type="email"
+              class="form-control"
+              placeholder="Your email"
+              aria-label="Username"
+              aria-describedby="addon-wrapping"
+              id="emailInput"
+              name="email"
+              required
+            />
+          </div>
+          <br />
+          <div class="input-group">
+            <textarea
+              class="form-control"
+              placeholder="Write here a message"
+              id="messageInput"
+              name="message"
+              rows="4"
+              required
+            ></textarea>
+          </div>
+          <br />
+          <button
+            type="submit"
+            class="btn btn-primary btn-lg"
+            id="sendButton"
+            data-translate="SendMessageBtn"
+          >
+            Send Message
+          </button>
+          <br /><br />
+        </form>
+      </div>
       <div id="formResponse" class="mt-3"></div>
     </div>
     <footer class="mt-5">
@@ -137,8 +178,8 @@
             alt="instagram-icon"
             target="_blank"
           >
-            <i class="fa-brands fa-instagram"></i
-          ></a>
+            <i class="fa-brands fa-instagram"></i>
+          </a>
         </div>
         <div class="col-md-1">
           <a
@@ -146,8 +187,8 @@
             alt="linkedin-icon"
             target="_blank"
           >
-            <i class="fa-brands fa-linkedin"></i
-          ></a>
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
         </div>
         <div class="col-md-1">
           <a
@@ -155,8 +196,8 @@
             alt="github-icon"
             target="_blank"
           >
-            <i class="fa-brands fa-square-github"></i
-          ></a>
+            <i class="fa-brands fa-square-github"></i>
+          </a>
         </div>
         <div class="col-md-1">
           <a
@@ -164,27 +205,15 @@
             alt="facebook-icon"
             target="_blank"
           >
-            <i class="fa-brands fa-square-facebook"></i
-          ></a>
+            <i class="fa-brands fa-square-facebook"></i>
+          </a>
         </div>
         <div class="col-md-1">
           <a href="#" id="emailIcon" alt="email-icon">
-            <i class="fa-regular fa-envelope"></i
-          ></a>
+            <i class="fa-regular fa-envelope"></i>
+          </a>
         </div>
       </div>
     </footer>
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://kit.fontawesome.com/beaf6e1073.js"
-      crossorigin="anonymous"
-    ></script>
-
-    <script src="js/index.js"></script>
   </body>
 </html>
