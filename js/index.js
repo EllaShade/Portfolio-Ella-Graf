@@ -20,15 +20,6 @@ document.addEventListener("DOMContentLoaded", function () {
 document.addEventListener("DOMContentLoaded", function () {
   console.log("Index script DOMContentLoaded");
 
-  function seeEmail(event) {
-    event.preventDefault();
-    let email = "elvira.a.graf@gmail.com";
-    alert("My 📧 address is: " + email);
-  }
-
-  let emailIcon = document.querySelector("#emailIcon");
-  emailIcon.addEventListener("click", seeEmail);
-
   function toggleLanguage() {
     let switchElement = document.getElementById("language-toggle");
     let language = switchElement.checked ? "EN" : "DE";
@@ -101,7 +92,7 @@ const translations = {
 
   welcomeDeveloper: {
     EN: "Frontend Developer, based in Switzerland, Berlingen.",
-    DE: "Frontend-Entwicklerin mit Sitz in der Schweiz, Berlingen.",
+    DE: "Frontend-Entwicklerin aus der Schweiz, Berlingen.",
   },
 
   welcomeGetStarted: {
