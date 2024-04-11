@@ -466,3 +466,20 @@ const translations = {
     DE: "Nachricht senden",
   },
 };
+
+// E-Mail-function
+function seeEmail(event) {
+  event.preventDefault();
+  let email = "elvira.a.graf@gmail.com";
+  alert("My 📧 address is: " + email);
+}
+
+window.addEventListener("load", function () {
+  let footerFrame = document.getElementById("footer-frame").contentWindow;
+  let footerDocument = footerFrame.document;
+
+  footerDocument.addEventListener("DOMContentLoaded", function () {
+    let emailIcon = footerDocument.getElementById("emailIcon");
+    emailIcon.addEventListener("click", seeEmail);
+  });
+});
