@@ -467,19 +467,23 @@ const translations = {
   },
 };
 
-// E-Mail-function
-function seeEmail(event) {
-  event.preventDefault();
-  let email = "elvira.a.graf@gmail.com";
-  alert("My 📧 address is: " + email);
-}
+document.addEventListener("DOMContentLoaded", function () {
+  console.log("Index script DOMContentLoaded");
 
-window.addEventListener("load", function () {
-  let footerFrame = document.getElementById("footer-frame").contentWindow;
-  let footerDocument = footerFrame.document;
+  // E-Mail-function
+  function seeEmail(event) {
+    event.preventDefault();
+    let email = "elvira.a.graf@gmail.com";
+    alert("My 📧 address is: " + email);
+  }
 
-  footerDocument.addEventListener("DOMContentLoaded", function () {
-    let emailIcon = footerDocument.getElementById("emailIcon");
-    emailIcon.addEventListener("click", seeEmail);
+  window.addEventListener("load", function () {
+    let footerFrame = document.getElementById("footer-frame").contentWindow;
+    let footerDocument = footerFrame.document;
+
+    footerDocument.addEventListener("DOMContentLoaded", function () {
+      let emailIcon = footerDocument.getElementById("emailIcon");
+      emailIcon.addEventListener("click", seeEmail);
+    });
   });
 });
