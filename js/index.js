@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-  console.log("Index script DOMContentLoaded");
+  console.log("Show Message");
 
   function showThankYouMessage() {
     document.getElementById("contactForm").classList.add("hidden");
@@ -467,7 +467,7 @@ const translations = {
   },
 };
 
-document.addEventListener("DOMContentLoaded", function () {
+/*document.addEventListener("DOMContentLoaded", function () {
   console.log("Index script DOMContentLoaded");
 
   // E-Mail-function
@@ -476,14 +476,68 @@ document.addEventListener("DOMContentLoaded", function () {
     let email = "elvira.a.graf@gmail.com";
     alert("My 📧 address is: " + email);
   }
+  console.log("Email sollte erscheinen");
 
   window.addEventListener("load", function () {
     let footerFrame = document.getElementById("footer-frame").contentWindow;
     let footerDocument = footerFrame.document;
+    console.log("Email sollte erscheinen hier");
 
     footerDocument.addEventListener("DOMContentLoaded", function () {
       let emailIcon = footerDocument.getElementById("emailIcon");
       emailIcon.addEventListener("click", seeEmail);
+      console.log("Email sollte erscheinen hier auch vielleicht");
     });
+  });
+});*/
+
+document.addEventListener("DOMContentLoaded", function () {
+  console.log("Email function");
+
+  // E-Mail-function
+  function seeEmail(event) {
+    try {
+      event.preventDefault();
+      let email = "elvira.a.graf@gmail.com";
+      alert("My 📧 address is: " + email);
+    } catch (error) {
+      console.error(
+        "An error occurred while trying to display the email:",
+        error
+      );
+    }
+  }
+  console.log("Email sollte erscheinen");
+
+  window.addEventListener("load", function () {
+    try {
+      var footerFrame = document.getElementById("footer-frame");
+
+      console.log(footerFrame);
+      footerFrame.contentDocument.body.addEventListener("load", function () {
+        console.log("footerframe loaded");
+        try {
+          let footerDocument =
+            footerFrame.contentDocument || footerFrame.contentWindow.document;
+          console.log("Footer frame content loaded");
+
+          let emailIcon = footerDocument.getElementById("emailIcon");
+
+          if (emailIcon) {
+            emailIcon.addEventListener("click", seeEmail);
+            console.log("Event Listener für EmailIcon hinzugefügt");
+          } else {
+            console.warn("Email icon not found in footer document.");
+          }
+        } catch (error) {
+          console.error(
+            "An error occurred in accessing footer document:",
+            error
+          );
+        }
+      });
+    } catch (error) {
+      console.error("An error occurred in accessing footer frame:", error);
+    }
   });
 });
