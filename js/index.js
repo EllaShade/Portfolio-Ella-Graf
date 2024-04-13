@@ -125,19 +125,6 @@ const translations = {
     DE: "Tauchen Sie ein in die Welt der koreanischen Hautpflege mit unserer interaktiven Website/App. Entdecken Sie kuratierte Hautpflegeroutinen und Produkte und bleiben Sie über unser Kontaktformular mit uns verbunden. Erleben Sie eine nahtlose Benutzeroberfläche, die entwickelt wurde, um Ihre Hautpflege-Reise zu verbessern.",
   },
 
-  projectWorldClocks: {
-    EN: "World-Clocks",
-    DE: "Weltuhren",
-  },
-  projectWorldClocksDescription: {
-    EN: "Observes the times around the world",
-    DE: "Beobachtet die Zeiten rund um die Welt",
-  },
-  projectWorldClocksDetails: {
-    EN: "Embark on a journey through time on our website, where you can effortlessly compare and choose time zones globally, simplifying your cross-border planning. With user-friendly features and an intuitive interface, managing international schedules has never been more convenient.",
-    DE: "Begib dich auf eine Reise durch die Zeit auf unserer Website, wo du mühelos Zeitzonen weltweit vergleichen und auswählen kannst, um deine länderübergreifende Planung zu vereinfachen. Mit benutzerfreundlichen Funktionen und einer intuitiven Benutzeroberfläche war das Verwalten internationaler Zeitpläne noch nie so bequem.",
-  },
-
   projectRhymeAlchemist: {
     EN: "Rhyme-Alchemist",
     DE: "Reim-Alchemist",
@@ -186,29 +173,14 @@ const translations = {
     DE: "Über mich",
   },
 
-  AboutMeLi1: {
-    EN: "Frontend developer",
-    DE: "Frontend-Entwickler",
-  },
-
-  AboutMeLi2: {
-    EN: "Successfully completed SheCodes program",
-    DE: "Erfolgreicher Abschluss des SheCodes-Programms",
-  },
-
-  AboutMeLi3: {
-    EN: "Advanced proficiency in HTML, CSS, JavaScript, and React",
-    DE: "Fortgeschrittene Kenntnisse in HTML, CSS, JavaScript und React",
+  AboutMeP: {
+    EN: "I am a passionate frontend developer with a successful completion of the SheCodes program. Currently, I am deepening my skills through the CS50 course from Harvard, focusing on algorithmic concepts and software development.",
+    DE: "Ich bin ein leidenschaftlicher Frontend-Entwickler mit einem erfolgreichen Abschluss des SheCodes-Programms. Derzeit vertiefe ich meine Kenntnisse durch den CS50-Kurs von Harvard in algorithmischen Konzepten und Softwareentwicklung.",
   },
 
   Skills: {
     EN: "My Skills include",
     DE: "Meine Fähigkeiten umfassen",
-  },
-
-  SkillsLi1: {
-    EN: "HTML, CSS, and JavaScript proficiency",
-    DE: "Gute Kenntnisse in HTML, CSS und JavaScript",
   },
 
   SkillsLi2: {
@@ -258,20 +230,6 @@ const translations = {
     DE: "Projektmanagement mit agilen Entwicklungsmethoden",
   },
 
-  Learning: {
-    EN: "Learning Environment",
-    DE: "Lernumgebung",
-  },
-
-  LearningLi1: {
-    EN: "SheCodes: Intensive frontend development program",
-    DE: "SheCodes: Intensives Frontend-Entwicklungsprogramm",
-  },
-  LearningLi2: {
-    EN: "CS50 (Harvard): Deepening knowledge in algorithmic concepts and software development",
-    DE: "CS50 (Harvard): Vertiefung der Kenntnisse in algorithmischen Konzepten und Softwareentwicklung",
-  },
-
   AboutText: {
     EN: "I look forward to applying my acquired skills in practice and realizing innovative web projects.",
     DE: "Ich freue mich darauf, meine erworbenen Fähigkeiten in die Praxis umzusetzen und mehr innovative Webprojekte zu realisieren.",
@@ -311,11 +269,6 @@ const translations = {
   projectKoreanSkincareDescriptionWork: {
     EN: "Dive into the world of Korean skincare with our interactive website/app. Explore curated skincare routines and products, and stay connected with us through our contact form. Experience a seamless interface designed to enhance your skincare journey.",
     DE: "Tauchen Sie ein in die Welt der koreanischen Hautpflege mit unserer interaktiven Website/App. Entdecken Sie kuratierte Hautpflegeroutinen und Produkte und bleiben Sie über unser Kontaktformular mit uns verbunden. Erleben Sie eine nahtlose Benutzeroberfläche, die entwickelt wurde, um Ihre Hautpflege-Reise zu verbessern.",
-  },
-
-  projectWorldClocksDescriptionWork: {
-    EN: "Explore global time zones effortlessly with our World Clock web application. Track time in various cities around the world, including London, New York, Seoul, and more. Seamlessly switch between locations using our intuitive interface. Created with passion by Ella Graf, this project is open-source and available on GitHub. Stay connected to different time zones with World Clock! 🌐⏰",
-    DE: "Entdecken Sie mühelos verschiedene Zeitzonen auf der ganzen Welt mit unserer Webanwendung World Clock. Verfolgen Sie die Uhrzeiten in verschiedenen Städten weltweit, darunter London, New York, Seoul und mehr. Wechseln Sie nahtlos zwischen den Standorten mit unserer benutzerfreundlichen Oberfläche. Dieses Projekt wurde mit Leidenschaft von Ella Graf erstellt und ist auf GitHub als Open Source verfügbar. Bleiben Sie mit ´World Clock´ in verschiedenen Zeitzonen verbunden! 🌐⏰",
   },
 
   projectRhymeAlchemistDescriptionWork: {
